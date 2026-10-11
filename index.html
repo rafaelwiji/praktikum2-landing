@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEHEL SNACK - Ga Gehel Ga Nagih!</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#0D0606] text-[#E6D6C4]">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-10 bg-[#100909]/90 backdrop-blur-md border-b border-[#3A2A24]">
+        <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+            <a href="#beranda" class="text-xl font-extrabold text-[#B8884A] flex items-center gap-2">
+                <span>🌶</span> GEHEL SNACK
+            </a>
+            
+            <!-- Menu Desktop -->
+            <ul class="hidden md:flex gap-8 text-sm font-semibold text-[#B9A79A]">
+                <li><a href="#beranda" class="hover:text-[#B8884A] transition-colors">Beranda</a></li>
+                <li><a href="#program" class="hover:text-[#B8884A] transition-colors">Menu Snack</a></li>
+                <li><a href="#kontak" class="hover:text-[#B8884A] transition-colors">Pesan Kilat</a></li>
+            </ul>
+
+            <!-- Tombol Pesan Sekarang Navbar -->
+            <a href="#kontak" class="hidden md:inline-flex rounded-xl bg-gradient-to-r from-[#5B1E1A] to-[#76291F] px-5 py-2.5 text-sm font-bold text-[#E6D6C4] shadow-lg border border-[#88402B] transform transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-red-900/40 hover:shadow-2xl active:scale-95">
+                🛒 Pesan Sekarang
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="beranda" class="relative overflow-hidden py-16 md:py-24">
+            <div class="mx-auto grid max-w-6xl items-center px-4 md:grid-cols-2 gap-12">
+                <div>
+                    <span class="inline-block px-3.5 py-1.5 mb-4 rounded-full border border-[#623027] bg-[#1D0C0B] text-[#C69A68] text-xs font-bold tracking-wider uppercase">
+                        🔥 CAMILAN PEDAS OTENTIK NUSANTARA
+                    </span>
+                    <h1 class="text-4xl font-black tracking-tight md:text-6xl text-[#E6D6C4] leading-tight">
+                        GA GEHEL <br><span class="text-[#B8884A]">GA NAGIH!</span>
+                    </h1>
+                    <p class="mt-4 text-[#B9A79A] text-base leading-relaxed">
+                        Sensasi camilan renyah dengan bumbu pedas gurih dan aroma rempah khas Nusantara yang bikin ketagihan!
+                    </p>
+                    
+                    <!-- Tombol Interaktif -->
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#program" class="inline-block rounded-xl bg-gradient-to-r from-[#5B1E1A] to-[#76291F] px-6 py-3.5 text-sm font-bold text-[#E6D6C4] shadow-lg border border-[#88402B] transform transition-all duration-300 hover:-translate-y-1.5 hover:scale-105 hover:shadow-xl hover:shadow-red-950/50 active:scale-95">
+                            🛒 LIHAT MENU GEHEL
+                        </a>
+                        
+                        <a href="#kontak" class="inline-block rounded-xl bg-[#120909] px-6 py-3.5 text-sm font-bold text-[#E6D6C4] border border-[#79513A] transform transition-all duration-300 hover:-translate-y-1.5 hover:scale-105 hover:bg-[#1D0C0B] hover:border-[#B8884A] hover:shadow-lg active:scale-95">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Wadah Gambar Hero (Dengan Efek Hover Bayangan Tipis) -->
+                <div class="relative p-3 border border-[#4A2B20] rounded-2xl bg-[#100808] shadow-2xl transition-all duration-500 hover:border-[#8A422B] hover:shadow-[0_10px_35px_rgba(184,136,74,0.15)] group">
+                    <img src="img/hero gehel.png" alt="Hero Gehel Snack" class="rounded-xl w-full h-[380px] object-cover shadow-md transition-all duration-500 group-hover:scale-[1.01] group-hover:shadow-[0_5px_20px_rgba(138,66,43,0.3)]">
+                    
+                    <!-- Fitur/Badge di bawah hero -->
+                    <div class="grid grid-cols-3 gap-2 mt-3">
+                        <div class="p-2.5 rounded-xl border border-[#3A221A] bg-[#150A09] text-[11px] font-bold text-center text-[#E6D6C4] transition-colors duration-300 group-hover:border-[#522D22]">
+                            🔥 Rasa Pedas Nampol
+                        </div>
+                        <div class="p-2.5 rounded-xl border border-[#3A221A] bg-[#150A09] text-[11px] font-bold text-center text-[#E6D6C4] transition-colors duration-300 group-hover:border-[#522D22]">
+                            🍃 Bahan Berkualitas
+                        </div>
+                        <div class="p-2.5 rounded-xl border border-[#3A221A] bg-[#150A09] text-[11px] font-bold text-center text-[#E6D6C4] transition-colors duration-300 group-hover:border-[#522D22]">
+                            🚚 Pengiriman Cepat
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRID DAN CARD (6 Menu) -->
+        <section id="program" class="mx-auto max-w-6xl px-4 py-16 border-t border-[#3A2A24]/40">
+            <div class="text-center">
+                <span class="text-[#B8884A] text-xs font-bold tracking-widest uppercase">Koleksi Spesial</span>
+                <h2 class="text-3xl font-black text-[#E6D6C4] mt-2">Menu Gehel Snack</h2>
+                <p class="text-[#B9A79A] text-sm mt-2 max-w-md mx-auto">Pilih varian camilan favoritmu dengan bumbu melimpah dan sensasi renyah maksimal!</p>
+            </div>
+            
+            <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Kartu 1 -->
+                <article class="overflow-hidden rounded-2xl bg-gradient-to-b from-[#1A0E0E] to-[#120909] border border-[#3A2A24] p-4 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-[#70402D] hover:shadow-2xl">
+                    <div class="h-52 w-full rounded-xl bg-[#0D0707] border border-[#3A211B] flex items-center justify-center p-2 overflow-hidden">
+                        <img src="img/mie lidi.jpeg" alt="Mie Lidi Gehel" class="h-full w-full object-contain">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-lg font-bold text-[#E6D6C4]">Mie Lidi Gehel</h3>
+                        <p class="mt-1 text-xs text-[#B9A79A]">Mie lidi renyah dengan bumbu khas pedas daun jeruk.</p>
+                        <div class="mt-4 pt-3 border-t border-[#3A2A24] flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-[#A99486]">Berat: 200g</span>
+                                <p class="text-xs font-bold text-[#C69A68]">Pedas Jeruk / Asin</p>
+                            </div>
+                            <button onclick="document.getElementById('modal').showModal()" class="rounded-lg bg-[#21100E] border border-[#603629] px-3.5 py-1.5 text-xs font-bold text-[#D6B28D] transform transition-all duration-200 hover:bg-[#4B1B16] hover:scale-105 active:scale-95 cursor-pointer">Detail</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu 2 -->
+                <article class="overflow-hidden rounded-2xl bg-gradient-to-b from-[#1A0E0E] to-[#120909] border border-[#3A2A24] p-4 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-[#70402D] hover:shadow-2xl">
+                    <div class="h-52 w-full rounded-xl bg-[#0D0707] border border-[#3A211B] flex items-center justify-center p-2 overflow-hidden">
+                        <img src="img/makaroni.jpeg" alt="Makaroni Gehel" class="h-full w-full object-contain">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-lg font-bold text-[#E6D6C4]">Makaroni Gehel</h3>
+                        <p class="mt-1 text-xs text-[#B9A79A]">Makaroni kriuk gurih dengan varian rasa pilihan.</p>
+                        <div class="mt-4 pt-3 border-t border-[#3A2A24] flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-[#A99486]">Berat: 200g</span>
+                                <p class="text-xs font-bold text-[#C69A68]">Balado / Jagung Bakar</p>
+                            </div>
+                            <button onclick="document.getElementById('modal').showModal()" class="rounded-lg bg-[#21100E] border border-[#603629] px-3.5 py-1.5 text-xs font-bold text-[#D6B28D] transform transition-all duration-200 hover:bg-[#4B1B16] hover:scale-105 active:scale-95 cursor-pointer">Detail</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu 3 -->
+                <article class="overflow-hidden rounded-2xl bg-gradient-to-b from-[#1A0E0E] to-[#120909] border border-[#3A2A24] p-4 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-[#70402D] hover:shadow-2xl">
+                    <div class="h-52 w-full rounded-xl bg-[#0D0707] border border-[#3A211B] flex items-center justify-center p-2 overflow-hidden">
+                        <img src="img/basreng.jpeg" alt="Basreng Gehel" class="h-full w-full object-contain">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-lg font-bold text-[#E6D6C4]">Basreng Gehel</h3>
+                        <p class="mt-1 text-xs text-[#B9A79A]">Basreng iris tipis renyah dengan bumbu nampol.</p>
+                        <div class="mt-4 pt-3 border-t border-[#3A2A24] flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-[#A99486]">Berat: 200g</span>
+                                <p class="text-xs font-bold text-[#C69A68]">Pedas Jeruk / Original</p>
+                            </div>
+                            <button onclick="document.getElementById('modal').showModal()" class="rounded-lg bg-[#21100E] border border-[#603629] px-3.5 py-1.5 text-xs font-bold text-[#D6B28D] transform transition-all duration-200 hover:bg-[#4B1B16] hover:scale-105 active:scale-95 cursor-pointer">Detail</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu 4 -->
+                <article class="overflow-hidden rounded-2xl bg-gradient-to-b from-[#1A0E0E] to-[#120909] border border-[#3A2A24] p-4 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-[#70402D] hover:shadow-2xl">
+                    <div class="h-52 w-full rounded-xl bg-[#0D0707] border border-[#3A211B] flex items-center justify-center p-2 overflow-hidden">
+                        <img src="img/kripca.jpeg" alt="Kripca Gehel" class="h-full w-full object-contain">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-lg font-bold text-[#E6D6C4]">Kripca</h3>
+                        <p class="mt-1 text-xs text-[#B9A79A]">Keripik kaca tipis renyah dengan bumbu pedas gurih.</p>
+                        <div class="mt-4 pt-3 border-t border-[#3A2A24] flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-[#A99486]">Berat: 125g</span>
+                                <p class="text-xs font-bold text-[#C69A68]">Pedas Jeruk / Asin</p>
+                            </div>
+                            <button onclick="document.getElementById('modal').showModal()" class="rounded-lg bg-[#21100E] border border-[#603629] px-3.5 py-1.5 text-xs font-bold text-[#D6B28D] transform transition-all duration-200 hover:bg-[#4B1B16] hover:scale-105 active:scale-95 cursor-pointer">Detail</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu 5 -->
+                <article class="overflow-hidden rounded-2xl bg-gradient-to-b from-[#1A0E0E] to-[#120909] border border-[#3A2A24] p-4 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-[#70402D] hover:shadow-2xl">
+                    <div class="h-52 w-full rounded-xl bg-[#0D0707] border border-[#3A211B] flex items-center justify-center p-2 overflow-hidden">
+                        <img src="img/singkong kriwil.jpeg" alt="Singkong Kriwil Gehel" class="h-full w-full object-contain">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-lg font-bold text-[#E6D6C4]">Singkong Kriwil</h3>
+                        <p class="mt-1 text-xs text-[#B9A79A]">Keripik singkong bentuk kriwil dengan bumbu khas.</p>
+                        <div class="mt-4 pt-3 border-t border-[#3A2A24] flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-[#A99486]">Berat: 200g</span>
+                                <p class="text-xs font-bold text-[#C69A68]">Pedas Jeruk / Ekstra</p>
+                            </div>
+                            <button onclick="document.getElementById('modal').showModal()" class="rounded-lg bg-[#21100E] border border-[#603629] px-3.5 py-1.5 text-xs font-bold text-[#D6B28D] transform transition-all duration-200 hover:bg-[#4B1B16] hover:scale-105 active:scale-95 cursor-pointer">Detail</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu 6 -->
+                <article class="overflow-hidden rounded-2xl bg-gradient-to-b from-[#1A0E0E] to-[#120909] border border-[#3A2A24] p-4 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-[#70402D] hover:shadow-2xl relative">
+                    <span class="absolute top-6 right-6 bg-[#29150E] border border-[#75502E] text-[#D5AD76] text-[10px] font-bold px-2.5 py-1 rounded-full">★ BEST SELLER</span>
+                    <div class="h-52 w-full rounded-xl bg-[#0D0707] border border-[#3A211B] flex items-center justify-center p-2 overflow-hidden">
+                        <img src="img/bundling.jpeg" alt="Bundling Nagih" class="h-full w-full object-contain">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-lg font-bold text-[#E6D6C4]">Bundling Nagih</h3>
+                        <p class="mt-1 text-xs text-[#B9A79A]">Paket hemat berisi 4 varian snack favorit pilihan.</p>
+                        <div class="mt-4 pt-3 border-t border-[#3A2A24] flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-[#A99486]">Isi Paket</span>
+                                <p class="text-xs font-bold text-[#C69A68]">4 Varian Snack</p>
+                            </div>
+                            <button onclick="document.getElementById('modal').showModal()" class="rounded-lg bg-[#21100E] border border-[#603629] px-3.5 py-1.5 text-xs font-bold text-[#D6B28D] transform transition-all duration-200 hover:bg-[#4B1B16] hover:scale-105 active:scale-95 cursor-pointer">Detail</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FORM KONTAK -->
+        <section id="kontak" class="mx-auto max-w-3xl px-4 py-16">
+            <div class="text-center mb-6">
+                <span class="text-[#B8884A] text-xs font-bold tracking-widest uppercase">Pemesanan Langsung</span>
+                <h2 class="text-2xl font-bold text-[#E6D6C4] mt-1">Form Pesan Kilat</h2>
+            </div>
+            
+            <div class="rounded-2xl bg-gradient-to-b from-[#1A0E0E] to-[#100808] border border-[#3A2A24] p-8 shadow-2xl">
+                <!-- Form Utama -->
+                <form id="order-form" class="space-y-4">
+                    <div class="grid gap-4 md:grid-cols-2">
+                        <div>
+                            <label for="nama" class="mb-1 block text-sm font-medium text-[#E6D6C4]">Nama Lengkap</label>
+                            <input id="nama" type="text" class="w-full rounded-xl border border-[#3A2A24] bg-[#0D0606] px-3.5 py-2.5 text-[#E6D6C4] focus:border-[#8A5A3B] focus:outline-none focus:ring-2 focus:ring-[#8A3A22]/25" placeholder="Masukkan nama kamu" required>
+                        </div>
+                        <div>
+                            <label for="email" class="mb-1 block text-sm font-medium text-[#E6D6C4]">Nomor HP / WhatsApp</label>
+                            <input id="email" type="text" class="w-full rounded-xl border border-[#3A2A24] bg-[#0D0606] px-3.5 py-2.5 text-[#E6D6C4] focus:border-[#8A5A3B] focus:outline-none focus:ring-2 focus:ring-[#8A3A22]/25" placeholder="08xxxxxxxxxx" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="program-pilihan" class="mb-1 block text-sm font-medium text-[#E6D6C4]">Pilih Snack</label>
+                        <select id="program-pilihan" class="w-full rounded-xl border border-[#3A2A24] bg-[#0D0606] px-3.5 py-2.5 text-[#E6D6C4] focus:border-[#8A5A3B] focus:outline-none focus:ring-2 focus:ring-[#8A3A22]/25">
+                            <option>Mie Lidi Gehel (200g)</option>
+                            <option>Makaroni Gehel (200g)</option>
+                            <option>Basreng Gehel (200g)</option>
+                            <option>Kripca Gehel (125g)</option>
+                            <option>Singkong Kriwil (200g)</option>
+                            <option>Bundling Nagih (Isi 4 Snack)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="pesan-text" class="mb-1 block text-sm font-medium text-[#E6D6C4]">Alamat & Catatan Pesanan</label>
+                        <textarea id="pesan-text" rows="3" class="w-full rounded-xl border border-[#3A2A24] bg-[#0D0606] px-3.5 py-2.5 text-[#E6D6C4] focus:border-[#8A5A3B] focus:outline-none focus:ring-2 focus:ring-[#8A3A22]/25" placeholder="Tuliskan alamat pengiriman..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full rounded-xl bg-gradient-to-r from-[#4A100F] to-[#6A2018] border border-[#713023] px-5 py-3 font-bold text-[#E6D6C4] shadow-lg cursor-pointer transform transition-all duration-300 hover:-translate-y-1 hover:brightness-110 active:scale-98">Kirim Pesanan Sekarang →</button>
+                </form>
+
+                <!-- Pesan Berhasil -->
+                <div id="success-box" class="hidden text-center py-8">
+                    <div class="text-5xl mb-3">✅</div>
+                    <h3 class="text-2xl font-bold text-[#E6D6C4]">Pesanan Berhasil Dibuat!</h3>
+                    <p class="text-sm text-[#B9A79A] mt-2 mb-6">Terima kasih telah memesan Gehel Snack. Pesanan kamu sedang kami proses.</p>
+                    <a href="#beranda" id="btn-kembali" class="inline-block rounded-xl bg-gradient-to-r from-[#5B1E1A] to-[#76291F] border border-[#88402B] px-6 py-3 text-sm font-bold text-[#E6D6C4] shadow-lg transform transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95">
+                        ← Kembali ke Beranda
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL -->
+    <dialog id="modal" class="m-auto w-full max-w-md rounded-2xl p-6 backdrop:bg-black/70 bg-[#160B0B] text-[#E6D6C4] border border-[#493027] shadow-2xl">
+        <h3 class="text-xl font-bold text-[#E6D6C4]">Detail Gehel Snack</h3>
+        <p class="mt-2 text-sm text-[#B9A79A] leading-relaxed">Gehel Snack menawarkan camilan renyah dengan pilihan rasa gurih, asin, dan pedas otentik Nusantara yang higienis serta dijamin bikin nagih!</p>
+        <form method="dialog" class="mt-6 text-right">
+            <button class="rounded-xl bg-[#5B1E1A] border border-[#88402B] px-4 py-2 text-sm font-bold text-[#E6D6C4] transform transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer">Tutup</button>
+        </form>
+    </dialog>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#090505] py-8 text-center text-xs text-[#A99486] border-t border-[#3A2A24]">
+        <strong class="block mb-2 text-[#B8884A] text-sm">GEHEL SNACK — GA GEHEL GA NAGIH! 🌶</strong>
+        <p>© 2026 GEHEL SNACK Indonesia. SMK Brantas Karangkates.</p>
+    </footer>
+
+    <!-- SCRIPT INTERAKSI FORM -->
+    <script>
+        const orderForm = document.getElementById('order-form');
+        const successBox = document.getElementById('success-box');
+        const btnKembali = document.getElementById('btn-kembali');
+
+        orderForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            orderForm.classList.add('hidden');
+            successBox.classList.remove('hidden');
+        });
+
+        btnKembali.addEventListener('click', function(e) {
+            e.preventDefault();
+            orderForm.reset();
+            successBox.classList.add('hidden');
+            orderForm.classList.remove('hidden');
+            document.getElementById('beranda').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
